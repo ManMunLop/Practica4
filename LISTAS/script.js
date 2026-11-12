@@ -91,9 +91,6 @@ do {
             window.alert("Saliendo del programa....")
             opcion = "M"
             break;
-
-        default:
-            break;
     }
 
     console.log(notas);
