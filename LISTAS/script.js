@@ -35,7 +35,35 @@ do {
             }
             break;
         case "D":
-            
+            let max = 0;
+            let min = Infinity;
+            let contador = 0;
+            let suma = 0;
+            let media = 0;
+            let moda = 0;
+
+            for (let nota of notas) {
+                if (nota < min) {
+                    min = nota;
+                }
+
+                if (nota > max) {
+                    max = nota;
+                }
+
+                contador++;
+                suma += nota;
+            }
+
+            media = suma / contador;
+
+
+
+            console.log("Máximo: " + max);
+            console.log("Mínimo: " + min);
+            console.log("Media: " + media);
+            console.log("Moda: " + moda);
+
             break;
         case "E":
             notas.splice(0, notas.length);
